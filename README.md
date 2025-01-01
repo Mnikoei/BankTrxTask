@@ -79,7 +79,8 @@
 ### تست‌ها
 - اجرای تست‌ها با دستور زیر:
   ```bash
-  composer tests
+  cd laradock;
+  sudo docker-compose exec  workspace composer test;
   ```  
 - تست‌های هر سرویس در مسیر مربوط به آن سرویس قرار گرفته‌اند:  
   `app/Services/{SERVICE NAME}/Tests`
