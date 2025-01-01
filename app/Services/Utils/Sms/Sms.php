@@ -45,7 +45,7 @@ class Sms implements ShouldQueue
         return $this;
     }
 
-    public function send()
+    public function send(): void
     {
         $this->viaQueue
             ? dispatch($this)
